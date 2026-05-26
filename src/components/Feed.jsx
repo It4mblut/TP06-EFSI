@@ -6,8 +6,12 @@ import './Feed.css'
 function Feed({ abrirPost }) {
     const [posts, setPosts] = useState([])
 
-    useEffect(() => {
-        axios.get('https://api.thecatapi.com/v1/images/search?limit=35')
+ useEffect(() => {
+        axios.get('https://api.thecatapi.com/v1/images/search?limit=120', {
+            headers: {
+                'x-api-key': 'live_zzCGWw1DQQ9xjtLrQ6zLi3aNLseLeXTBVbvB8jDk50ucSqF6lxGHTaAE1bKVGnYb'
+            }
+        })
             .then(respuesta => setPosts(respuesta.data))
     }, [])
 
