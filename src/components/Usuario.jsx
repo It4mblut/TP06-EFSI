@@ -5,8 +5,8 @@ function Usuario() {
         username: '@juancito.loPz',
         bio: 'Solo alguien que ama a los gatos',
         publicaciones: 24,
-        seguidores: 300,
-        seguidos: 273,
+        seguidores: 1300,
+        seguidos: 430,
         foto: 'https://fotografias-atreseries.atresmedia.com/clipping/cmsimages02/2018/06/06/54229044-BF06-42B7-A62E-AC06B1348713/70.jpg?crop=1574,885,x0,y42&width=480&height=270&optimize=high&format=webply'
     }
     return (
