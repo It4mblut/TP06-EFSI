@@ -4,7 +4,7 @@ function Sidebar({ setVistaActual }) {
   return (
     <aside className="sidebar">
       <div className="sidebar-perfil" onClick={() => setVistaActual('usuario')}>
-        <img src="https://st2.depositphotos.com/4196725/6217/i/450/depositphotos_62170405-stock-photo-young-cool-black-man-proud.jpg" alt="perfil" className="sidebar-fotoPerfil" />
+        <img src="https://tn.com.ar/show/television/2024/02/04/dr-house-el-medico-cinico-y-antipatico-que-se-convirtio-en-el-sherlock-holmes-de-las-enfermedades/" alt="perfil" className="sidebar-fotoPerfil" />
         <div>
           <p className="sidebar-nombre">Juan López</p>
           <p className="sidebar-arroba">@juancito.loPz</p>

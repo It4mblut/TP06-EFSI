@@ -1,13 +1,13 @@
 import './Usuario.css'
 function Usuario() {
     const usuario = {
-        nombre: 'Juan',
-        username: '@67Cat',
+        nombre: 'Juan López',
+        username: '@juancito.loPz',
         bio: 'Solo alguien que ama a los gatos',
         publicaciones: 24,
         seguidores: 300,
         seguidos: 273,
-        foto: 'https://st2.depositphotos.com/4196725/6217/i/450/depositphotos_62170405-stock-photo-young-cool-black-man-proud.jpg'
+        foto: 'https://tn.com.ar/show/television/2024/02/04/dr-house-el-medico-cinico-y-antipatico-que-se-convirtio-en-el-sherlock-holmes-de-las-enfermedades/'
     }
     return (
         <div className="usuario">
