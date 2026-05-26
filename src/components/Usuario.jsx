@@ -7,7 +7,7 @@ function Usuario() {
         publicaciones: 24,
         seguidores: 300,
         seguidos: 273,
-        foto: 'https://tn.com.ar/show/television/2024/02/04/dr-house-el-medico-cinico-y-antipatico-que-se-convirtio-en-el-sherlock-holmes-de-las-enfermedades/'
+        foto: 'https://fotografias-atreseries.atresmedia.com/clipping/cmsimages02/2018/06/06/54229044-BF06-42B7-A62E-AC06B1348713/70.jpg?crop=1574,885,x0,y42&width=480&height=270&optimize=high&format=webply'
     }
     return (
         <div className="usuario">
