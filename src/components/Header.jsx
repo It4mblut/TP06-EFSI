@@ -1,3 +1,6 @@
+import { IoSettingsOutline } from 'react-icons/io5'
+import { IoCameraOutline } from 'react-icons/io5'
+import { IoPaperPlaneOutline } from 'react-icons/io5'
 import './Header.css'
 
 function Header() {
@@ -12,9 +15,9 @@ function Header() {
       </div>
 
       <div className="header-icons">
-        <button>⚙️</button>
-        <button>📷</button>
-        <button>➢</button>
+        <button><IoSettingsOutline /></button>
+        <button><IoCameraOutline /></button>
+        <button><IoPaperPlaneOutline /></button>
         <button className="header-newpost">+ New Post</button>
       </div>
     </header>
