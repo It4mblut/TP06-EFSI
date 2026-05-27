@@ -12,3 +12,26 @@
   padding: 0 20px;
   z-index: 100;
 }
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-icons button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+}
+
+.header-newpost {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px !important;
+}

@@ -1,3 +1,5 @@
+import { IoHomeOutline, IoCompassOutline, IoVideocamOutline, IoTvOutline, IoNotificationsOutline } from 'react-icons/io5'
+import { IoPersonOutline, IoHeartOutline } from 'react-icons/io5'
 import './Sidebar.css'
 
 function Sidebar({ setVistaActual }) {
@@ -12,16 +14,16 @@ function Sidebar({ setVistaActual }) {
       </div>
 
       <div className="sidebar-seguido">
-        <span>👤 1300 seguidores</span>
-        <span>♡ 430 seguidos</span>
+        <span><IoPersonOutline /> 1300 seguidores</span>
+        <span><IoHeartOutline /> 430 seguidos</span>
       </div>
 
       <nav className="sidebar-opciones">
-        <button onClick={() => setVistaActual('feed')}>Home</button>
-        <button>Explore</button>
-        <button>Reels</button>
-        <button>IGTV</button>
-        <button>Notificaciones</button>
+        <button onClick={() => setVistaActual('feed')}><IoHomeOutline /> Home</button>
+        <button><IoCompassOutline /> Explore</button>
+        <button><IoVideocamOutline /> Reels</button>
+        <button><IoTvOutline /> IGTV</button>
+        <button><IoNotificationsOutline /> Notificaciones</button>
       </nav>
     </aside>
   )
