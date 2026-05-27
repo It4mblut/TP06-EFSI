@@ -13,9 +13,9 @@ function Sidebar({ setVistaActual }) {
         </div>
       </div>
 
-      <div className="sidebar-seguido">
-        <span><IoPersonOutline /> 1300 seguidores</span>
-        <span><IoHeartOutline /> 430 seguidos</span>
+      <div className="sidebar-seguidores">
+        <button><IoPersonOutline /> {1.3}K</button>
+        <button><IoHeartOutline /> {300}K</button>
       </div>
 
       <nav className="sidebar-opciones">
