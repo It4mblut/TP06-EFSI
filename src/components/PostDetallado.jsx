@@ -15,33 +15,36 @@ function PostDetallado({ post, onVolver }) {
   }
 
   const comentarios = [
-    { usuario: '@gatitosLindos', texto: 'hermoso!!'},
-    { usuario: '@amoGatitos', texto: 'que tierno'},
-    { usuario: '@gatoo67', texto: 'jaja, que torpe'},
+    { usuario: '@gatitosLindos', texto: 'hermoso!!' },
+    { usuario: '@amoGatitos', texto: 'que tierno' },
+    { usuario: '@gatoo67', texto: 'jaja, que torpe' },
   ]
 
   return (
     <div className="postdetallado">
       <button onClick={onVolver}>←</button>
 
-      <img src={post.url} alt="gato" className="postdetallado-imagen" />
 
-      <div className="postdetallado-info">
-        <p className="postdetallado-usuario">@gatoo67</p>
-        <p className="postdetallado-desc">Otro gatito haciendo cosas de gatos</p>
-        <p className="postdetallado-fecha">26 de mayo de 2025</p>
-
-        <div className="postdetallado-acciones">
-          <button onClick={toggleLike}>{likeado ? '❤️' : '🤍'} {likes}</button>
-          <button>💬 Comentar</button>
-          <button>✈︎ Compartir</button>
+      <div className="postdetallado-contenido">
+        <img src={post.url} alt="gato" className="postdetallado-imagen" />
+        <div className="postdetallado-info">
+          <p className="postdetallado-usuario">@gatoo67</p>
+          <p className="postdetallado-desc">Otro gatito haciendo cosas de gatos</p>
+          <p className="postdetallado-fecha">26 de mayo de 2025</p>
         </div>
+      </div>
 
-        <div className="postdetallado-comentarios">
-          {comentarios.map((comentario, i) => (
-            <p key={i}><strong>{comentario.usuario}</strong> {comentario.texto}</p>
-          ))}
-        </div>
+
+      <div className="postdetallado-acciones">
+        <button onClick={toggleLike}>{likeado ? '❤️' : '🤍'} {likes}</button>
+        <button>💬 Comentar</button>
+        <button>✈︎ Compartir</button>
+      </div>
+
+      <div className="postdetallado-comentarios">
+        {comentarios.map((comentario, i) => (
+          <p key={i}><strong>{comentario.usuario}</strong> {comentario.texto}</p>
+        ))}
       </div>
     </div>
   )

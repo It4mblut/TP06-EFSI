@@ -1,0 +1,49 @@
+.postdetallado {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.postdetallado-imagen {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.postdetallado-contenido {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.postdetallado-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postdetallado-usuario {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.postdetallado-acciones button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.postdetallado-comentarios p {
+  margin-top: 8px;
+}
+
+.postdetallado > button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: fit-content;
+}
