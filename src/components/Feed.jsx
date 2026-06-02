@@ -21,6 +21,10 @@ function Feed({ abrirPost }) {
         { usuario: '@gatoo67', foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNBLmnNWfkgI83S1NuVF2k6dMjISlhRVMKQ&s' },
         { usuario: '@gatitos_', foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5bFJhvKYCa7KA85tr7HmB5ua-PHqBnU5KkQ&s' },
         { usuario: '@xXmichisXx', foto: 'https://www.clarin.com/2024/07/04/uteodLeuh_2000x1500__1.jpg' },
+        { usuario: '@gat0z_', foto: 'https://cdn2.thecatapi.com/images/182.jpg' },
+        { usuario: '@C4t', foto: 'https://cdn2.thecatapi.com/images/2en.jpg' },
+        { usuario: '@CDN', foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNZe-5VjXmag6NrQhcAzS-JbcnOzUx_jguQw&s' },
+        { usuario: '@gat0_o', foto: 'https://cdn2.thecatapi.com/images/38g.jpg' }
     ]
 
     return (
