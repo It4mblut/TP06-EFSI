@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './PostDEtallado.css'
+import { IoHeartOutline, IoHeart, IoChatbubbleOutline, IoPaperPlaneOutline } from 'react-icons/io5'
 
 function PostDetallado({ post, onVolver }) {
   const [likes, setLikes] = useState(Math.floor(Math.random() * 1000))
@@ -32,20 +33,16 @@ function PostDetallado({ post, onVolver }) {
           <p className="postdetallado-desc">Otro gatito haciendo cosas de gatos</p>
           <p className="postdetallado-fecha">26 de mayo de 2025</p>
           <div className="postdetallado-acciones">
-            <button onClick={toggleLike}>{likeado ? '❤️' : '🤍'} {likes}</button>
-            <button>💬 Comentar</button>
-            <button>✈︎ Compartir</button>
+            <button onClick={toggleLike}>{likeado ? <IoHeart color="red" /> : <IoHeartOutline />} {likes}</button>
+            <button><IoChatbubbleOutline /> Comentar</button>
+            <button><IoPaperPlaneOutline /> Compartir</button>
+          </div>
+          <div className="postdetallado-comentarios">
+            {comentarios.map((comentario, i) => (
+              <p key={i}><strong>{comentario.usuario}</strong> {comentario.texto}</p>
+            ))}
           </div>
         </div>
-      </div>
-
-
-
-
-      <div className="postdetallado-comentarios">
-        {comentarios.map((comentario, i) => (
-          <p key={i}><strong>{comentario.usuario}</strong> {comentario.texto}</p>
-        ))}
       </div>
     </div>
   )
