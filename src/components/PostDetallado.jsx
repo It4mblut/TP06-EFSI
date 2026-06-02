@@ -31,15 +31,16 @@ function PostDetallado({ post, onVolver }) {
           <p className="postdetallado-usuario">@gatoo67</p>
           <p className="postdetallado-desc">Otro gatito haciendo cosas de gatos</p>
           <p className="postdetallado-fecha">26 de mayo de 2025</p>
+          <div className="postdetallado-acciones">
+            <button onClick={toggleLike}>{likeado ? '❤️' : '🤍'} {likes}</button>
+            <button>💬 Comentar</button>
+            <button>✈︎ Compartir</button>
+          </div>
         </div>
       </div>
 
 
-      <div className="postdetallado-acciones">
-        <button onClick={toggleLike}>{likeado ? '❤️' : '🤍'} {likes}</button>
-        <button>💬 Comentar</button>
-        <button>✈︎ Compartir</button>
-      </div>
+
 
       <div className="postdetallado-comentarios">
         {comentarios.map((comentario, i) => (
